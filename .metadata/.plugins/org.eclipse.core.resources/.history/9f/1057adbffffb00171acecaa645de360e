@@ -9,6 +9,7 @@ package org.usfirst.frc.team5787.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
@@ -18,16 +19,11 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
  * it contains the code necessary to operate a robot with tank drive.
  */
 public class Robot extends IterativeRobot {
-	enum Configuration{
-		TANK, ONE_STICK
-	};
-	final double TURN_SPEED = 1.5D;
 	private DifferentialDrive m_myRobot;
 	private DifferentialDrive m_myRobot2;
 	private Joystick m_leftStick;
 	private Joystick m_rightStick;
 	private Timer timer;
-	private final Configuration CONFIG = Configuration.TANK;
 
 	@Override
 	public void robotInit() {
@@ -40,14 +36,8 @@ public class Robot extends IterativeRobot {
 
 	@Override
 	public void teleopPeriodic() {
-		if (CONFIG == Configuration.TANK){
-			m_myRobot.tankDrive(m_leftStick.getY(), m_rightStick.getY());
-			m_myRobot2.tankDrive(m_leftStick.getY(), m_rightStick.getY());
-		}
-		else if (CONFIG == Configuration.ONE_STICK){
-			m_myRobot.tankDrive(m_leftStick.getY() + m_leftStick.getX() / TURN_SPEED, m_leftStick.getY() - m_leftStick.getX() / TURN_SPEED);
-			m_myRobot2.tankDrive(m_leftStick.getY() + m_leftStick.getX() / TURN_SPEED, m_leftStick.getY() - m_leftStick.getX() / TURN_SPEED);
-		}
+		m_myRobot.tankDrive(m_leftStick.getY() + m_leftStick.getX() / 2D, m_leftStick.getY() - m_leftStick.getX() / 2D);
+		m_myRobot2.tankDrive(m_leftStick.getY() + m_leftStick.getX() / 2D, m_leftStick.getY() - m_leftStick.getX() / 2D);
 	}
 	
 	public void autonomousPeriodic() { //This method is called each time the robot recieves a packet instructing the robot to be in autonomous enabled mode

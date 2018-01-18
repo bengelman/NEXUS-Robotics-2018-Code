@@ -9,6 +9,7 @@ package org.usfirst.frc.team5787.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
@@ -41,8 +42,8 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() {
 		if (CONFIG == Configuration.TANK){
-			m_myRobot.tankDrive(m_leftStick.getY(), m_rightStick.getY());
-			m_myRobot2.tankDrive(m_leftStick.getY(), m_rightStick.getY());
+			m_myRobot.tankDrive(m_leftStick.getY(), m_leftStick.getZ());
+			m_myRobot2.tankDrive(m_leftStick.getY(), m_leftStick.getZ());
 		}
 		else if (CONFIG == Configuration.ONE_STICK){
 			m_myRobot.tankDrive(m_leftStick.getY() + m_leftStick.getX() / TURN_SPEED, m_leftStick.getY() - m_leftStick.getX() / TURN_SPEED);

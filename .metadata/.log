@@ -441,3 +441,60 @@ java.net.SocketException: Socket operation on nonsocket: configureBlocking
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:18:01.048
 !MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:29:06.573
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:29:06.605
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:29:26.175
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:29:26.184
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:30:03.625
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:30:03.633
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:34:13.911
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:34:13.923
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:34:32.181
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:34:32.190
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:37:11.338
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:37:11.346
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2018-01-17 20:37:23.835
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:94)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:37:36.787
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:37:36.793
+!MESSAGE Targets: deploy, Mode: run
