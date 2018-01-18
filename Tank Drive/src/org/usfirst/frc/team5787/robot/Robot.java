@@ -9,7 +9,9 @@ package org.usfirst.frc.team5787.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Spark;
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 /**
@@ -18,18 +20,32 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
  */
 public class Robot extends IterativeRobot {
 	private DifferentialDrive m_myRobot;
+	private DifferentialDrive m_myRobot2;
 	private Joystick m_leftStick;
 	private Joystick m_rightStick;
+	private Timer timer;
 
 	@Override
 	public void robotInit() {
-		m_myRobot = new DifferentialDrive(new Spark(0), new Spark(1));
+		m_myRobot = new DifferentialDrive(new Spark(0), new Spark(2));
+		m_myRobot2 = new DifferentialDrive(new Spark(1), new Spark(3));
 		m_leftStick = new Joystick(0);
 		m_rightStick = new Joystick(1);
+		timer = new Timer();
 	}
 
 	@Override
 	public void teleopPeriodic() {
-		m_myRobot.tankDrive(m_leftStick.getY(), m_rightStick.getY());
+		m_myRobot.tankDrive(m_leftStick.getY() + m_leftStick.getX() / 2D, m_leftStick.getY() - m_leftStick.getX() / 2D);
+		m_myRobot2.tankDrive(m_leftStick.getY() + m_leftStick.getX() / 2D, m_leftStick.getY() - m_leftStick.getX() / 2D);
+	}
+	
+	public void autonomousPeriodic() { //This method is called each time the robot recieves a packet instructing the robot to be in autonomous enabled mode
+	     // Drive for 2 seconds
+	     if (timer.get() < 2.0) {
+	          m_myRobot.tankDrive(-0.5, 0.5); // drive forwards half speed
+	     } else {
+	          m_myRobot.tankDrive(0.0, 0.0); // stop robot
+	     }
 	}
 }

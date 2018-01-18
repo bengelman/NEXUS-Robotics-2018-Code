@@ -270,3 +270,174 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2018-01-17 18:45:17.909
 !MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@1b48784a, edu.wpi.first.wpilib.plugins.core.wizards.Tag@7ab17cf, edu.wpi.first.wpilib.plugins.core.wizards.Tag@26f0ab88, edu.wpi.first.wpilib.plugins.core.wizards.Tag@6e49863e, edu.wpi.first.wpilib.plugins.core.wizards.Tag@361b2995, edu.wpi.first.wpilib.plugins.core.wizards.Tag@69d145f6, edu.wpi.first.wpilib.plugins.core.wizards.Tag@4a5e0faf, edu.wpi.first.wpilib.plugins.core.wizards.Tag@680408ac, edu.wpi.first.wpilib.plugins.core.wizards.Tag@73cd3b8, edu.wpi.first.wpilib.plugins.core.wizards.Tag@6421d85c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@5eb89000, edu.wpi.first.wpilib.plugins.core.wizards.Tag@16b1b213, edu.wpi.first.wpilib.plugins.core.wizards.Tag@77f1026e, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1df8c7f4, edu.wpi.first.wpilib.plugins.core.wizards.Tag@75a6cdb]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:03:36.429
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:03:36.437
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY riolog 1 0 2018-01-17 19:04:04.320
+!MESSAGE exiting listener
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:13:52.450
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:13:52.473
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-01-17 19:13:52.600
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-01-17 19:13:52.626
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:18:49.956
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:18:49.966
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.jdt.launching 4 150 2018-01-17 19:24:48.712
+!MESSAGE The archive: C:/Program%20Files/Java/jdk1.8.0_91/lib/tools.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.ant.launching 4 120 2018-01-17 19:24:48.726
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketException: Socket operation on nonsocket: configureBlocking
+	at java.net.DualStackPlainSocketImpl.configureBlocking(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:24:58.367
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:24:58.373
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:27:33.821
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:27:33.828
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:29:00.313
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:29:00.320
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:36:34.841
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:36:34.849
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:40:56.185
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:40:56.194
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:43:45.634
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:43:45.640
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY riolog 1 0 2018-01-17 19:44:50.527
+!MESSAGE Connected to robot at 127.0.0.1
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:55:34.010
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:55:34.017
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:56:43.169
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:56:43.177
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:57:58.305
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:57:58.311
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:58:44.094
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 19:58:44.102
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:01:12.107
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:01:12.114
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:03:45.696
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:03:45.705
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:04:06.520
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:04:06.531
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:05:48.324
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:05:48.333
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:07:09.113
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:07:09.126
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:09:54.538
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:09:54.547
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:10:34.012
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:10:34.019
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:14:20.937
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:14:20.946
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:15:22.478
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:15:22.485
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:16:51.183
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:16:51.193
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:18:01.035
+!MESSAGE Running ant file: C:\Users\brend\git\NEXUS_Robotics_2018\NEXUS-Robotics-2018-Code\Tank Drive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-01-17 20:18:01.048
+!MESSAGE Targets: deploy, Mode: run
