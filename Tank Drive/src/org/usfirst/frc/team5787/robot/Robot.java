@@ -26,7 +26,6 @@ public class Robot extends IterativeRobot {
 	private DifferentialDrive m_myRobot;
 	private DifferentialDrive m_myRobot2;
 	private Joystick m_leftStick;
-	private Joystick m_rightStick;
 	private XboxController xbox;
 	private Timer timer;
 	private Configuration config = Configuration.TANK;
@@ -36,7 +35,6 @@ public class Robot extends IterativeRobot {
 		m_myRobot = new DifferentialDrive(new Spark(0), new Spark(2));
 		m_myRobot2 = new DifferentialDrive(new Spark(1), new Spark(3));
 		m_leftStick = new Joystick(0);
-		m_rightStick = new Joystick(1);
 		xbox = new XboxController(0);
 		timer = new Timer();
 	}
@@ -64,7 +62,7 @@ public class Robot extends IterativeRobot {
 	public void autonomousPeriodic() { //This method is called each time the robot recieves a packet instructing the robot to be in autonomous enabled mode
 	     // Drive for 2 seconds
 	     if (timer.get() < 2.0) {
-	          m_myRobot.tankDrive(-0.5, 0.5); // drive forwards half speed
+	          m_myRobot.tankDrive(0.5, 0.5); // drive forwards half speed
 	     } else {
 	          m_myRobot.tankDrive(0.0, 0.0); // stop robot
 	     }
