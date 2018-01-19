@@ -28,7 +28,7 @@ $RECYCLE.BIN/
 .AppleDouble
 .LSOverride
 
-.metadata/
+.metadata
 
 # Thumbnails
 ._*
@@ -47,3 +47,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.metadata/.log
