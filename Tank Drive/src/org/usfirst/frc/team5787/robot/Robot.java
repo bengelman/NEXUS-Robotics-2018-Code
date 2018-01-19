@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Timer;
+import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 /**
@@ -19,15 +20,16 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
  */
 public class Robot extends IterativeRobot {
 	enum Configuration{
-		TANK, ONE_STICK
+		TANK, ARCADE
 	};
 	final double TURN_SPEED = 1.5D;
 	private DifferentialDrive m_myRobot;
 	private DifferentialDrive m_myRobot2;
 	private Joystick m_leftStick;
 	private Joystick m_rightStick;
+	private XboxController xbox;
 	private Timer timer;
-	private final Configuration CONFIG = Configuration.TANK;
+	private Configuration config = Configuration.TANK;
 
 	@Override
 	public void robotInit() {
@@ -35,16 +37,25 @@ public class Robot extends IterativeRobot {
 		m_myRobot2 = new DifferentialDrive(new Spark(1), new Spark(3));
 		m_leftStick = new Joystick(0);
 		m_rightStick = new Joystick(1);
+		xbox = new XboxController(0);
 		timer = new Timer();
 	}
 
 	@Override
 	public void teleopPeriodic() {
-		if (CONFIG == Configuration.TANK){
-			m_myRobot.tankDrive(m_leftStick.getY(), m_rightStick.getY());
-			m_myRobot2.tankDrive(m_leftStick.getY(), m_rightStick.getY());
+		if (xbox.getYButtonPressed()){
+			if (config == Configuration.TANK){
+				config = Configuration.ARCADE;
+			}
+			else{
+				config = Configuration.TANK;
+			}
 		}
-		else if (CONFIG == Configuration.ONE_STICK){
+		if (config == Configuration.TANK){
+			m_myRobot.tankDrive(xbox.getRawAxis(1), xbox.getRawAxis(5));
+			m_myRobot2.tankDrive(xbox.getRawAxis(1), xbox.getRawAxis(5));
+		}
+		else if (config == Configuration.ARCADE){
 			m_myRobot.tankDrive(m_leftStick.getY() + m_leftStick.getX() / TURN_SPEED, m_leftStick.getY() - m_leftStick.getX() / TURN_SPEED);
 			m_myRobot2.tankDrive(m_leftStick.getY() + m_leftStick.getX() / TURN_SPEED, m_leftStick.getY() - m_leftStick.getX() / TURN_SPEED);
 		}
